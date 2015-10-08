@@ -1,0 +1,16 @@
+{
+  "name" : "HTML::Escape",
+  "source-url" : "",
+  "perl" : "v6",
+  "build-depends" : [ ],
+  "provides" : {
+    "HTML::Escape" : "lib/HTML/Escape.pm6"
+  },
+  "depends" : [ ],
+  "description" : "blah blah blah",
+  "test-depends" : [ ],
+  "version" : "*",
+  "authors" : [
+    "moznion"
+  ]
+}
