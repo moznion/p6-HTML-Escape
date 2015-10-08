@@ -1,13 +1,13 @@
 {
   "name" : "HTML::Escape",
-  "source-url" : "",
+  "source-url" : "git://github.com/moznion/p6-HTML-Escape.git",
   "perl" : "v6",
   "build-depends" : [ ],
   "provides" : {
     "HTML::Escape" : "lib/HTML/Escape.pm6"
   },
   "depends" : [ ],
-  "description" : "blah blah blah",
+  "description" : "Utility of HTML escaping",
   "test-depends" : [ ],
   "version" : "*",
   "authors" : [
