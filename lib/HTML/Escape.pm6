@@ -48,6 +48,12 @@ performs a similar function to PHP's htmlspecialchars.
 
 This module is perl6 port of L<HTML::Escape of perl5|https://metacpan.org/pod/HTML::Escape>.
 
+=head1 Functions
+
+=head2 C<escape-html(Str $raw-str) returns Str>
+
+Escapes HTML's special characters in given string.
+
 =head1 TODO
 
 =item Support unescaping function?
@@ -58,7 +64,7 @@ L<HTML::Escape of perl5|https://metacpan.org/pod/HTML::Escape>
 
 =head1 COPYRIGHT AND LICENSE
 
-    Copyright 2015 moznion <moznion@gmail.com>
+    Copyright 2017- moznion <moznion@gmail.com>
 
     This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
@@ -70,3 +76,4 @@ And original perl5's HTML::Escape is
     the same terms as the Perl 5 programming language system itself.
 
 =end pod
+
