@@ -1,16 +1,19 @@
 {
-  "name" : "HTML::Escape",
-  "source-url" : "git://github.com/moznion/p6-HTML-Escape.git",
-  "perl" : "v6",
+  "authors" : [
+    "moznion"
+  ],
   "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "Utility of HTML escaping",
+  "license" : "Artistic-2.0",
+  "name" : "HTML::Escape",
+  "perl" : "6.c",
   "provides" : {
     "HTML::Escape" : "lib/HTML/Escape.pm6"
   },
-  "depends" : [ ],
-  "description" : "Utility of HTML escaping",
+  "resources" : [ ],
+  "source-url" : "git://github.com/moznion/p6-HTML-Escape.git",
+  "tags" : [ ],
   "test-depends" : [ ],
-  "version" : "*",
-  "authors" : [
-    "moznion"
-  ]
+  "version" : "0.0.1"
 }

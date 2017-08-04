@@ -19,6 +19,14 @@ HTML::Escape provides a function which escapes HTML's special characters. It per
 
 This module is perl6 port of [HTML::Escape of perl5](https://metacpan.org/pod/HTML::Escape).
 
+Functions
+=========
+
+`escape-html(Str $raw-str) returns Str`
+---------------------------------------
+
+Escapes HTML's special characters in given string.
+
 TODO
 ====
 
@@ -32,7 +40,7 @@ SEE ALSO
 COPYRIGHT AND LICENSE
 =====================
 
-    Copyright 2015 moznion <moznion@gmail.com>
+    Copyright 2017- moznion <moznion@gmail.com>
 
     This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
