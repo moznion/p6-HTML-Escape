@@ -32,6 +32,33 @@ sub escape-html(Str $raw) returns Str is export {
     ]);
 }
 
+sub unescape-html(Str $escaped) returns Str is export {
+    my Pair @translations = [
+        # Named entities
+        "&amp;" => "&",
+        "&apos;" => "'",
+        "&cent;" => "¢",
+        "&copy;" => "©",
+        "&euro;" => "€",
+        "&gt;" => ">",
+        "&lt;" => "<",
+        "&pound;" => "£",
+        "&quot;" => "\"",
+        "&reg;" => "®",
+        "&yen;" => "¥",
+    ];
+
+    my Str @old;
+    my Str @new;
+
+    for @translations -> $translation {
+        @old.push($translation.key);
+        @new.push($translation.value);
+    }
+
+    $escaped.trans(@old => @new);
+}
+
 =begin pod
 
 =head1 NAME
