@@ -13,7 +13,13 @@
   },
   "resources" : [ ],
   "source-url" : "git://github.com/moznion/p6-HTML-Escape.git",
-  "tags" : [ ],
-  "test-depends" : [ ],
-  "version" : "0.0.1"
+  "tags" : [
+      "HTML",
+      "String functions",
+      "Utils"
+  ],
+  "test-depends" : [
+      "Test::META"
+  ],
+  "version" : "0.1.0"
 }
