@@ -1,4 +1,7 @@
+#! /usr/bin/env false
+
 use v6;
+
 unit class HTML::Escape;
 
 sub escape-html(Str $raw) returns Str is export {
