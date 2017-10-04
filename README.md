@@ -27,10 +27,10 @@ Functions
 
 Escapes HTML's special characters in given string.
 
-TODO
-====
+`unescape-html(Str $escaped) returns Str`
+-----------------------------------------
 
-  * Support unescaping function?
+Unescapes HTML's special characters in given string.
 
 SEE ALSO
 ========
