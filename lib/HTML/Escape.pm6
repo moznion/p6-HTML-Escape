@@ -46,6 +46,12 @@ sub unescape-html(Str $escaped) returns Str is export {
         "&quot;" => "\"",
         "&reg;" => "®",
         "&yen;" => "¥",
+
+        # Numbered entities
+        "&#39;" => "'",
+        "&#96;" => "`",
+        "&#123;" => "\{",
+        "&#125;" => "\}",
     ];
 
     my Str @old;
