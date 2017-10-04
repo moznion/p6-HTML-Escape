@@ -5,7 +5,11 @@ use v6.c;
 use Test;
 use HTML::Escape;
 
+plan 2;
+
 subtest "Unescape named HTML entities" => {
+    plan 11;
+
     is unescape-html("&amp;"), "&", "Ampersand";
     is unescape-html("&apos;"), "'", "Single quotation mark (apostrophe)";
     is unescape-html("&cent;"), "¢", "Cent";
@@ -20,6 +24,8 @@ subtest "Unescape named HTML entities" => {
 }
 
 subtest "Unescape numbered HTML entities" => {
+    plan 4;
+
     is unescape-html("&#39;"), "'", "Single quotation mark (apostrophe)";
     is unescape-html("&#96;"), "`", "Grave accent (backtick)";
     is unescape-html("&#123;"), "\{", "Opening brace";

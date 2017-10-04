@@ -5,6 +5,8 @@ use v6.c;
 use Test;
 use HTML::Escape;
 
+plan 7;
+
 is unescape-html("&lt;^o^&gt;"), "<^o^>";
 is unescape-html("&#39;"), "'";
 is unescape-html("\0&gt;"), "\0>";
