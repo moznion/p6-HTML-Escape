@@ -1,4 +1,7 @@
+#! /usr/bin/env false
+
 use v6;
+
 unit class HTML::Escape;
 
 sub escape-html(Str $raw) returns Str is export {
@@ -27,6 +30,39 @@ sub escape-html(Str $raw) returns Str is export {
         '&#123;',
         '&#125;'
     ]);
+}
+
+sub unescape-html(Str $escaped) returns Str is export {
+    my Pair @translations = [
+        # Named entities
+        "&amp;" => "&",
+        "&apos;" => "'",
+        "&cent;" => "¢",
+        "&copy;" => "©",
+        "&euro;" => "€",
+        "&gt;" => ">",
+        "&lt;" => "<",
+        "&pound;" => "£",
+        "&quot;" => "\"",
+        "&reg;" => "®",
+        "&yen;" => "¥",
+
+        # Numbered entities
+        "&#39;" => "'",
+        "&#96;" => "`",
+        "&#123;" => '{',
+        "&#125;" => '}',
+    ];
+
+    my Str @old;
+    my Str @new;
+
+    for @translations -> $translation {
+        @old.push($translation.key);
+        @new.push($translation.value);
+    }
+
+    $escaped.trans(@old => @new);
 }
 
 =begin pod
